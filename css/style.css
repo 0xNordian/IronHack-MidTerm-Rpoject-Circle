@@ -1,4 +1,120 @@
+:root {
+    --darkBlue: #072AC8;
+    --celeste: #43D2FF;
+    --lightBlue: #A2D6F9;
+    --lighterBlue: #D1EDFF;
+
+    --dark: #292E47;
+    --darkGrey: #6B708D;
+    --lighGrey: #ECF7FF;
+    --lighterGrey: #F2F4FC;
+
+    --yellow: #FFC600;
+    --white: #ffffff;
+    --black: #000000;
+  }
+  
+
 * {
     margin: 0;
     padding: 0;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
+    background-color: var(--lighterGrey);
+    font-size: 17px;
+  }
+
+.m1-body {
+
+}
+
+.m2-body {
+    
+}
+
+.p1-body {
+
+}
+
+.p2-body {
+
+}
+
+
+
+.outer{
+    height: 100vh; /*for demo only*/
+    /* background: teal; */
+    overflow: auto;
+}
+
+.inner {
+    width: 80%;
+    height: 1000px;
+    /* background: coral; */
+    margin: auto;
+    margin-top: 0%;
+    position: relative;
+}
+
+header > div {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-nav label {
+    display: none;
+} 
+
+#hamburger {
+    display: none;
+}
+
+.page-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem 3rem;
+}
+
+.page-nav li{
+    margin: 0 2rem;
+}
+
+.page-nav li a {
+    text-decoration: none;
+    color: var(--darkGrey);
+}
+
+.page-nav li a:hover {
+    color: var(--darkBlue);
+}
+
+.contact-us {
+    width: 5rem;
+    height: 1.5rem;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    font-size: 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem 1.5rem;
+    gap: 10px;
+}
+
+.contact-us > div {
+
+}
+
