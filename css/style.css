@@ -29,12 +29,12 @@ body {
     font-size: 17px;
   }
 
-.m1-body {
+/* .m1-body {
 
 }
 
 .m2-body {
-    
+
 }
 
 .p1-body {
@@ -43,9 +43,7 @@ body {
 
 .p2-body {
 
-}
-
-
+} */
 
 .outer{
     height: 100vh; /*for demo only*/
@@ -114,7 +112,7 @@ header > div {
     gap: 10px;
 }
 
-.contact-us > div {
+/* .contact-us > div {
 
-}
+} */
 
