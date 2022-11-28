@@ -209,20 +209,27 @@ header > article {
     /* border: 1px dotted red; */
 }
 
-#get-in-touch {
-    width: 22%;
-    height: 5%;
-    background-color: var(--darkBlue);
+#ow {
+    width: 400px;
+    height: 3rem;
+    /* background-color: var(--darkBlue); */
     color: var(--white);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-left: 13rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #our-work {
     position: absolute;
+    width: 400px;
     color: var(--darkGrey);
 }
 
 a #our-work{
+    width: 400px;
     text-decoration: none;
 }
 
@@ -285,9 +292,19 @@ a .contact-us:visited {
 
 #companies-sect {
     width: 100%;
+
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 0 2.5rem;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-#companies {
+/* #companies {
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -295,16 +312,41 @@ a .contact-us:visited {
     align-items: center;
     margin-top: 5%;
     filter: saturate(0%);
+} */
+
+#companies {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 7%;
+    padding: 0 2.5rem;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    filter: saturate(0%);
 }
 
 #companies:hover {
     filter: saturate(80%);
 }
 
+.corp-logo{
+    padding-bottom: 0em;
+    flex-basis: 124px;
+    max-width: 124px;
+    flex-grow: 1;
+    justify-content: center;
+
+    /* background-color: var(--white); */
+}
+
 #recent-projects {
     width: 100%;
     max-width: 1200px;
     margin-top: 5%;
+    padding: 0 2rem;
 
     /* background-color: coral; */
 }
@@ -321,7 +363,8 @@ a .contact-us:visited {
 .projects {
     width: 100%;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 2.5%;
+    padding: 0 2.5rem;
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -344,12 +387,24 @@ a .contact-us:visited {
 }
 
 .card__content{
-    width: 80%;
-    margin: 0 0;
+    width: 100%;
+    margin: auto;
+}
+
+.card__picture{
+    background-size: cover;
+    overflow: hidden;
+
 }
 
 .card__img {
     width: 340px;
+    object-fit: fill;
+    transition: all 0.3s linear;
+}
+
+.card__img:hover{
+    transform: scale(1.12);
 }
 
 .card__title{
