@@ -10,22 +10,24 @@
 </head>
 
 <body>
-    <nav class="page-nav">
-        <div>
-            <img src="images/logos/circle.svg" alt="Circle Logo" class="circle-logo">
-        </div>
+    <nav class="navbar">
+        <div class="navbar-overlay display-none" onclick="toggleMenuOpen()"></div>
 
-        <label for="hamburger">☰</label>
-        <input type="checkbox" id="hamburger">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-        </ul>
+        <button type="button" class="navbar-burger display-none" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+        </button>
+        <span><img src="/ironhack/week2/groupLab/project-assets/logos/circle.svg" alt="circle logo"></span>
+        <nav class="navbar-menu">
+            <ul class="non-underline list-direction margin-ul">
+                <li><a href="#" class="non-underline">Home</a></li>
+                <li><a href="#" class="non-underline">Projects</a></li>
+                <li><a href="#" class="non-underline">Services</a></li>
 
-        <div class="contact-us">
-            Contact Us
-        </div>
+            </ul>
+            <span class="contact-us"><a href="#" class="text-white non-underline">Contact Us</a></span>
+
+        </nav>
+
     </nav>
 
     <header>
@@ -62,7 +64,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="corp-logo">
             <div class="corp-img">
                 <a href="https://www.google.com" target="_blank">
@@ -70,7 +72,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="corp-logo">
             <div class="corp-img">
                 <a href="https://www.microsoft.com" target="_blank">
@@ -78,7 +80,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="corp-logo">
             <div class="corp-img">
                 <a href="https://www.fedex.com" target="_blank">
@@ -86,7 +88,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="corp-logo">
             <div class="corp-img">
                 <a href="https://www.amazon.com" target="_blank">
