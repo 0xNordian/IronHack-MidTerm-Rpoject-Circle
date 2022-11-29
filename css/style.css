@@ -226,11 +226,11 @@ header > article {
     position: absolute;
     width: 400px;
     color: var(--darkGrey);
+    text-decoration: none;
 }
 
 a #our-work{
     width: 400px;
-    text-decoration: none;
 }
 
 #our-work a:visited {
