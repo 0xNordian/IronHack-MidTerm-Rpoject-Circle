@@ -19,7 +19,6 @@ button {
 
 .navbar {
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     display: flex;
@@ -112,74 +111,7 @@ body.open .navbar-menu {
 }
 
 
-/* Estilos para seccion questions */
-.bg-yellow {
-    background-color: var(--yellow);
-}
 
-.margin-x-2 {
-    margin: 2% 0;
-}
-
-.border-none {
-    border: none;
-    width: auto;
-    text-align: center;
-}
-
-.img-size {
-    width: 2rem;
-    height: 2rem;
-    padding: 0 2%;
-
-}
-
-.mail-input {
-    border: 1px solid red;
-    justify-content: center;
-    align-items: center;
-    height: 2.5rem;
-    background-color: var(--white);
-    margin: 1% 0;
-    display: flex;
-    border: none;
-}
-
-.flex-row {
-    display: inline-flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-column {
-    display: inline-flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.section-questions-size {
-    width: 90%;
-    height: 500px;
-    margin-top: 7%;
-    /* quitar margen  */
-
-}
-
-.text-center {
-    text-align: center;
-}
 
 /* ESTILOS FOOTER */
 

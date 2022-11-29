@@ -361,6 +361,7 @@ a .contact-us:visited {
 
 .projects {
     width: 100%;
+    height: auto;
     margin: 0 auto;
     margin-top: 2.5%;
     padding: 0 2.5rem;
@@ -453,13 +454,13 @@ section .bg-dark {
     border-radius: 50%;
 }
 
-.flex {
+/* .flex {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-}
+} */
 
 .section-feedback-size {
     width: 90%;
@@ -514,9 +515,10 @@ section .bg-dark {
     width: 128px;
 }
 
-/* Services */
+/* Our Services */
 .services {
     width: 100%;
+    height: auto;
     margin: 0 auto;
     margin-top: 2.5%;
     padding: 0 2.5rem;
@@ -526,6 +528,7 @@ section .bg-dark {
     justify-content: space-evenly;
     gap: 1.5rem;
     flex-wrap: wrap;
+
 }
 
 .card__item-ser{
@@ -533,12 +536,15 @@ section .bg-dark {
     padding-bottom: 1em;
     flex-basis: 280px;
     max-width: 340px;
+    height: 340px;
     flex-grow: 1;
 
-    border-radius: 0px;
+    border-radius: 0;
     background: #ffffff;
     box-shadow: 11px 11px 22px #e8e8e8,
         -11px -11px 22px #ffffff;
+
+    position: relative;
 }
 
 .card__content-ser{
@@ -548,15 +554,22 @@ section .bg-dark {
 
 .card__picture-ser{
     width: 10%;
-    /* background-size: cover;
-    overflow: hidden; */
-
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
 }
 
 .card__img-ser {
+    margin: 1rem 0;
     width: 64px;
-    object-fit: fill;
+    /* object-fit: fill; */
     transition: all 0.3s linear;
+    position: absolute;
+    /* border: 1px solid rgba(255, 0, 0, 0); */
+
+    background-color: var(--lighGrey);
+    background-image: 80% 80%;
+    border-radius: 50%;
 }
 
 .card__img-ser:hover{
@@ -564,7 +577,16 @@ section .bg-dark {
 }
 
 .card__title-ser{
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+}
+
+.card__paragraph-ser{
+    position: absolute;
+    top: 11rem;
+    left: 2rem;
 }
 
 .card__text-ser {
@@ -572,5 +594,77 @@ section .bg-dark {
 }
 
 .card__footer-ser{
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+    position: absolute;
+    top: 16rem;
+    left: 2rem;
 } 
+
+/* Estilos para seccion questions */
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.margin-x-2 {
+    margin: 2% 0;
+}
+
+.border-none {
+    border: none;
+    width: auto;
+    text-align: center;
+}
+
+.img-size {
+    width: 2rem;
+    height: 2rem;
+    padding: 0 2%;
+
+}
+
+.mail-input {
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    background-color: var(--white);
+    margin: 1% 0;
+    display: flex;
+    border: none;
+}
+
+.flex-row {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-questions-size {
+    width: 90%;
+    height: 500px;
+    margin-top: 7%;
+    /* quitar margen  */
+
+}
+
+.text-center {
+    text-align: center;
+}
