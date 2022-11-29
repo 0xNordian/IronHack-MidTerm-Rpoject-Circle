@@ -1,152 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/IronHack-MidTerm-Rpoject-Circle/css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/burger-qa-footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="burger.js" defer></script>
     <title>Circle</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <div class="navbar-overlay display-none" onclick="toggleMenuOpen()"></div>
+      <div class="navbar-overlay display-none" onclick="toggleMenuOpen()"></div>
 
-        <button type="button" class="navbar-burger display-none" onclick="toggleMenuOpen()">
-            <span class="material-icons">menu</span>
-        </button>
-        <span><img src="/ironhack/week2/groupLab/project-assets/logos/circle.svg" alt="circle logo"></span>
-        <nav class="navbar-menu">
-            <ul class="non-underline list-direction margin-ul">
-                <li><a href="#" class="non-underline">Home</a></li>
-                <li><a href="#" class="non-underline">Projects</a></li>
-                <li><a href="#" class="non-underline">Services</a></li>
-
-            </ul>
-            <span class="contact-us"><a href="#" class="text-white non-underline">Contact Us</a></span>
-
-        </nav>
-
+      <button
+        type="button"
+        class="navbar-burger display-none"
+        onclick="toggleMenuOpen()"
+      >
+        <span class="material-icons">☰</span>
+      </button>
+      <span><img src="/images/logos/circle.svg" alt="circle logo" /></span>
+      <nav class="navbar-menu">
+        <ul class="non-underline list-direction margin-ul">
+          <li><a href="#" class="non-underline">Home</a></li>
+          <li><a href="#" class="non-underline">Projects</a></li>
+          <li><a href="#" class="non-underline">Services</a></li>
+        </ul>
+        <span class="contact-us"
+          ><a href="#" class="text-white non-underline">Contact Us</a></span
+        >
+      </nav>
     </nav>
 
     <header>
-        <article class="half-box1 center-center1">
-            <h1 class="hero-header">Empower Your Business With Stunning Design!</h1>
-            <div class="par-head">
-                <p>Circle is a digital design and development studio.</p>
-                <p>We design and develop astonishing websites</p>
-                <p>and mobile apps.</p>
-            </div>
-            <div id="header-cta">
-                <div>
-                    <a class="contact-us" href="#">Get in touch</a>
-                </div>
-                <div id="ow">
-                    <a id="our-work" href="#">See our work</a>
-                </div>
-            </div>
-        </article>
-
-        <div class="half-box2 center-center2">
-            <img id="hero-img" src="images/hero-section/hero-image.png" alt="Person">
-            <img id="hero-card" src="images/hero-section/card-1.png" alt="Credit Card">
-            <img id="hero-emoji" src="images/hero-section/card-2.png" alt="Project Accepted">
+      <article class="half-box1 center-center1">
+        <h1 class="hero-header">Empower Your Business With Stunning Design!</h1>
+        <div class="par-head">
+          <p>Circle is a digital design and development studio.</p>
+          <p>We design and develop astonishing websites</p>
+          <p>and mobile apps.</p>
         </div>
+        <div id="header-cta">
+          <div>
+            <a class="contact-us" href="#">Get in touch</a>
+          </div>
+          <div id="ow">
+            <a id="our-work" href="#">See our work</a>
+          </div>
+        </div>
+      </article>
 
+      <div class="half-box2 center-center2">
+        <img
+          id="hero-img"
+          src="images/hero-section/hero-image.png"
+          alt="Person"
+        />
+        <img
+          id="hero-card"
+          src="images/hero-section/card-1.png"
+          alt="Credit Card"
+        />
+        <img
+          id="hero-emoji"
+          src="images/hero-section/card-2.png"
+          alt="Project Accepted"
+        />
+      </div>
     </header>
 
+    <!-- COMPANIES -->
     <aside id="companies">
-        <div class="corp-logo">
-            <div class="corp-img">
-                <a href="https://www.airbnb.com" target="_blank">
-                    <img id="c1" src="images/logos/airbnb-logo.svg" alt="Airbnb">
-                </a>
-            </div>
+      <div class="corp-logo">
+        <div class="corp-img">
+          <a href="https://www.airbnb.com" target="_blank">
+            <img id="c1" src="images/logos/airbnb-logo.svg" alt="Airbnb" />
+          </a>
         </div>
+      </div>
 
-        <div class="corp-logo">
-            <div class="corp-img">
-                <a href="https://www.google.com" target="_blank">
-                    <img id="c2" src="images/logos/google-logo.svg" alt="Google">
-                </a>
-            </div>
+      <div class="corp-logo">
+        <div class="corp-img">
+          <a href="https://www.google.com" target="_blank">
+            <img id="c2" src="images/logos/google-logo.svg" alt="Google" />
+          </a>
         </div>
+      </div>
 
-        <div class="corp-logo">
-            <div class="corp-img">
-                <a href="https://www.microsoft.com" target="_blank">
-                    <img id="c3" src="images/logos/microsoft-logo.svg" alt="Microsoft">
-                </a>
-            </div>
+      <div class="corp-logo">
+        <div class="corp-img">
+          <a href="https://www.microsoft.com" target="_blank">
+            <img
+              id="c3"
+              src="images/logos/microsoft-logo.svg"
+              alt="Microsoft"
+            />
+          </a>
         </div>
+      </div>
 
-        <div class="corp-logo">
-            <div class="corp-img">
-                <a href="https://www.fedex.com" target="_blank">
-                    <img id="c4" src="images/logos/fedex-logo.svg" alt="FedEx">
-                </a>
-            </div>
+      <div class="corp-logo">
+        <div class="corp-img">
+          <a href="https://www.fedex.com" target="_blank">
+            <img id="c4" src="images/logos/fedex-logo.svg" alt="FedEx" />
+          </a>
         </div>
+      </div>
 
-        <div class="corp-logo">
-            <div class="corp-img">
-                <a href="https://www.amazon.com" target="_blank">
-                    <img id="c5" src="images/logos/amazon-logo.svg" alt="amazon-logo">
-                </a>
-            </div>
+      <div class="corp-logo">
+        <div class="corp-img">
+          <a href="https://www.amazon.com" target="_blank">
+            <img id="c5" src="images/logos/amazon-logo.svg" alt="amazon-logo" />
+          </a>
         </div>
+      </div>
     </aside>
 
+    <!-- PROJECTS -->
     <section id="recent-projects">
-        <h3 class="bod-med">Recent Projects</h3>
+      <h3 class="bod-med">Recent Projects</h3>
     </section>
 
     <div class="projects">
-        <article class="card__item">
-            <div class="card__content">
-                <figure class="card__picture">
-                    <img src="images/projects-section/1.jpg" alt="Project Simplify" class="card__img">
-                </figure>
+      <article class="card__item">
+        <div class="card__content">
+          <figure class="card__picture">
+            <img
+              src="images/projects-section/1.jpg"
+              alt="Project Simplify"
+              class="card__img"
+            />
+          </figure>
 
-                <div class="card__text">
-                    <h3 class="card__title bod-med">Simplify</h3>
-                    <p class="card__paragraph">UI Design & App Development</p>
-                    <div class="card__footer">Learn More</div>
-                </div>
-            </div>
-        </article>
+          <div class="card__text">
+            <h3 class="card__title bod-med">Simplify</h3>
+            <p class="card__paragraph">UI Design & App Development</p>
+            <div class="card__footer">Learn More</div>
+          </div>
+        </div>
+      </article>
 
-        <article class="card__item">
-            <div class="card__content">
-                <figure class="card__picture">
-                    <img src="images/projects-section/2.jpg" alt="Project Simplify" class="card__img">
-                </figure>
+      <article class="card__item">
+        <div class="card__content">
+          <figure class="card__picture">
+            <img
+              src="images/projects-section/2.jpg"
+              alt="Project Simplify"
+              class="card__img"
+            />
+          </figure>
 
-                <div class="card__text">
-                    <h3 class="card__title bod-med">Dashcoin</h3>
-                    <p class="card__paragraph">Web Development</p>
-                    <div class="card__footer">Learn More</div>
-                </div>
-            </div>
-        </article>
+          <div class="card__text">
+            <h3 class="card__title bod-med">Dashcoin</h3>
+            <p class="card__paragraph">Web Development</p>
+            <div class="card__footer">Learn More</div>
+          </div>
+        </div>
+      </article>
 
-        <article class="card__item">
-            <div class="card__content">
-                <figure class="card__picture">
-                    <img src="images/projects-section/5.jpg" alt="Project Simplify" class="card__img">
-                </figure>
+      <article class="card__item">
+        <div class="card__content">
+          <figure class="card__picture">
+            <img
+              src="images/projects-section/5.jpg"
+              alt="Project Simplify"
+              class="card__img"
+            />
+          </figure>
 
-                <div class="card__text">
-                    <h3 class="card__title bod-med">Vectorify</h3>
-                    <p class="card__paragraph">User Experience Design</p>
-                    <div class="card__footer">Learn More</div>
-                </div>
-            </div>
-        </article>
+          <div class="card__text">
+            <h3 class="card__title bod-med">Vectorify</h3>
+            <p class="card__paragraph">User Experience Design</p>
+            <div class="card__footer">Learn More</div>
+          </div>
+        </div>
+      </article>
     </div>
 
-    <script src="app.js"></script>
-</body>
+    <!-- CLIENTS FEEDBACK -->
 
+    <section class="bg-dark flex section-feedback-size fb-section">
+      <h3 class="text-center-cf">Hear What Our Clients Have to Say</h3>
+      <div id="feedback-text">
+        <p class="bod-reg p-font-format-cf">
+          “Circle helped us through every stage of our startup.
+        </p>
+        <p class="bod-reg p-font-format-cf">
+          We really enjoyed working with you.”
+        </p>
+      </div>
+      <div class="flex-column flex-row">
+        <span class="client-feedback"
+          ><img
+            class="img-size-cf img-pfp"
+            src="/images/testimonial-section/profile.png"
+            alt="Profile"
+        /></span>
+        <span class="feedback-name">
+          <div>
+            Kristin Watson
+            <div class="feedback-company">
+                Booking.com
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="emoji-feedback emoji-feedback-tl">
+        <img src="/images/testimonial-section/memoji-1.png" alt="Memoji 1" />
+      </div>
+      <div class="emoji-feedback emoji-feedback-tr">
+        <img src="/images/testimonial-section/memoji-2.png" alt="Memoji 2" />
+      </div>
+      <div class="emoji-feedback emoji-feedback-lr">
+        <img src="/images/testimonial-section/memoji-3.png" alt="Memoji 3" />
+      </div>
+      <div class="emoji-feedback emoji-feedback-ll">
+        <img src="/images/testimonial-section/memoji-4.png" alt="Memoji 4" />
+      </div>
+    </section>
+
+    <!-- SERVICES  -->
+    <section id="recent-projects">
+      <h3 class="bod-med">Our Services</h3>
+    </section>
+
+    <div class="projects">
+      <article class="card__item">
+        <div class="card__content">
+          <figure class="card__picture">
+            <img
+              src="images/projects-section/1.jpg"
+              alt="Project Simplify"
+              class="card__img"
+            />
+          </figure>
+
+          <div class="card__text">
+            <h3 class="card__title bod-med">Simplify</h3>
+            <p class="card__paragraph">UI Design & App Development</p>
+            <div class="card__footer">Learn More</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card__item">
+        <div class="card__content">
+          <figure class="card__picture">
+            <img
+              src="images/projects-section/2.jpg"
+              alt="Project Simplify"
+              class="card__img"
+            />
+          </figure>
+
+          <div class="card__text">
+            <h3 class="card__title bod-med">Dashcoin</h3>
+            <p class="card__paragraph">Web Development</p>
+            <div class="card__footer">Learn More</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card__item">
+        <div class="card__content">
+          <figure class="card__picture">
+            <img
+              src="images/projects-section/5.jpg"
+              alt="Project Simplify"
+              class="card__img"
+            />
+          </figure>
+
+          <div class="card__text">
+            <h3 class="card__title bod-med">Vectorify</h3>
+            <p class="card__paragraph">User Experience Design</p>
+            <div class="card__footer">Learn More</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- NEWSLETTER  -->
+    <section class="bg-yellow flex column section-questions-size">
+      <h3 class="text-center">Do you have any questions?</h3>
+      <p class="bod-reg margin-x-2">Let us help you</p>
+      <div class="flex-column flex-row">
+        <span class="mail-input"
+          ><img
+            class="img-size"
+            src="/images/newsletter/icon/mail.svg"
+            alt="" /><input
+            class="border-none"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+        /></span>
+        <span class="contact-us"
+          ><button type="submit" class="contact-us">Subscribe</button></span
+        >
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
 </html>

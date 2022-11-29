@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
+
 :root {
     --darkBlue: #072AC8;
     --celeste: #43D2FF;
@@ -22,7 +24,18 @@
     font-size: 17px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
+body {
+    width: 100vw;
+    height: 6000px;
+    color: var(--darkGrey);
+    background-color: var(--lighterGrey);
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 h1 {
     font-size: 3.5rem;
@@ -78,20 +91,7 @@ h4 {
     font-weight: normal;
 }
 
-body {
-    width: 100vw;
-    height: 3000px;
-    color: var(--darkGrey);
-    background-color: var(--lighterGrey);
-    /* border: 1px solid red; */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.page-nav {
+/* .page-nav {
     width: 80%;
     height: auto;
 
@@ -102,7 +102,6 @@ body {
     position: fixed;
 
     background-color: var(--lighterGrey);
-    /* border: 1px solid teal; */
 }
 
 .page-nav label {
@@ -133,7 +132,7 @@ body {
 
 .page-nav li a:hover {
     color: var(--darkBlue);
-}
+} */
 
 .contact-us {
     width: 8rem;
@@ -418,3 +417,99 @@ a .contact-us:visited {
 .card__footer{
     margin-top: 3rem;
 } 
+
+/* CLIENTS FEEDBACK */
+section .bg-dark {
+    position: relative;
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+#feedback-text{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.p-font-format-cf {
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--yellow);
+}
+
+.border-none {
+    border: none;
+    width: auto;
+    text-align: center;
+}
+
+.img-size-cf {
+    width: 2.94rem;
+    height: 2.94rem;
+}
+
+.img-pfp{
+    border-radius: 50%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-feedback-size {
+    width: 90%;
+    height: 622px;
+    margin-top: 7%;
+    /* quitar margen  */
+
+}
+
+.text-center-cf {
+    color: var(--white);
+    text-align: center;
+}
+
+.feedback-name{
+    color: var(--lightBlue);
+} 
+.feedback-company{
+    color: var(--white);
+    margin-top: .3rem;
+} 
+
+.fb-section{
+    position: relative;
+}
+
+.emoji-feedback-tl{
+    position: absolute;
+    left: 7%;
+    top: 7%;
+}
+
+.emoji-feedback-tr{
+    position: absolute;
+    right: 7%;
+    top: 7%;
+}
+
+.emoji-feedback-lr{
+    position: absolute;
+    left: 7%;
+    bottom: 7%;
+}
+
+.emoji-feedback-ll{
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+}
+
+.emoji-feedback img{
+    width: 128px;
+}
