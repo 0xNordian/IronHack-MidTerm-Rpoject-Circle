@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <script src="burger.js" defer></script>
-  <title>Circle 3</title>
+  <title>Circle</title>
 </head>
 
 <body>
@@ -36,8 +36,8 @@
     </nav>
   </nav>
 
-<!-- HERO SECTION -->
-  <header>
+  <!-- HERO SECTION -->
+  <header class="desktop">
     <article class="half-box1 center-center1">
       <h1 class="hero-header">Empower Your Business With Stunning Design!</h1>
       <div class="par-head">
@@ -60,7 +60,31 @@
       <img id="hero-card" src="./images/hero-section/card-1.png" alt="Credit Card" />
       <img id="hero-emoji" src="./images/hero-section/card-2.png" alt="Project Accepted" />
     </div>
+
   </header>
+
+  <!-- <header class="tablet"> -->
+    <div class="parent hero-tablet display-hero-tab">
+      <div class="div1"> 
+        <h1 class="hero-header-tablet">Empower Your Business With Stunning Design!</h1>
+      </div>
+      <div class="div2"> 
+        <div class="half-box2-tablet center-center2-tablet">
+          <img id="hero-img-tablet" src="./images/hero-section/hero-image.png" alt="Person" />
+          <img id="hero-card-tablet" src="./images/hero-section/card-1.png" alt="Credit Card" />
+          <img id="hero-emoji-tablet" src="./images/hero-section/card-2.png" alt="Project Accepted" />
+        </div>
+      </div>
+      <div class="div3"> 
+        <div class="par-head-tablet">
+          <p>Circle is a digital design and development studio.</p>
+          <p>We design and develop astonishing websites</p>
+          <p>and mobile apps.</p>
+        </div>
+      </div>
+      <div class="div4"> </div>
+    </div>
+  <!-- </header> -->
 
   <!-- COMPANIES -->
   <aside id="companies">
@@ -199,16 +223,16 @@
   <div class="services">
     <article class="card__item-ser">
       <!-- <div class="card__content-ser"> -->
-        <figure class="card__picture-ser">
-          <img src="./images/services-section/icons/1.svg" alt="Pen Icon" class="card__img-ser" />
-        </figure>
+      <figure class="card__picture-ser">
+        <img src="./images/services-section/icons/1.svg" alt="Pen Icon" class="card__img-ser" />
+      </figure>
 
-        <div class="card__text-ser">
-          <h3 class="card__title-ser bod-med">User Interface Design</h3>
-          <p class="card__paragraph-ser">Circle provides you with a stunning user interface design that is accessible to
-            everyone.</p>
-          <div class="card__footer-ser"><a href="#">Learn More</a></div>
-        </div>
+      <div class="card__text-ser">
+        <h3 class="card__title-ser bod-med">User Interface Design</h3>
+        <p class="card__paragraph-ser">Circle provides you with a stunning user interface design that is accessible to
+          everyone.</p>
+        <div class="card__footer-ser"><a href="#">Learn More</a></div>
+      </div>
       <!-- </div> -->
     </article>
 
@@ -280,8 +304,7 @@
       </div>
     </div>
     <div class="center-center flex-column">
-      <span><img class="margin-x-30-img" src="./images/logos/circle.svg"
-          alt="circle logo" /></span>
+      <span><img class="margin-x-30-img" src="./images/logos/circle.svg" alt="circle logo" /></span>
       <p class="box-address text-center">2972 Westheimer Rd. Santa Ana,</p>
       <p class="box-address text-center">Illinois 85486.</p>
     </div>
