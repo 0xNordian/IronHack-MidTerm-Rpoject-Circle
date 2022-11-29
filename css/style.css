@@ -128,10 +128,16 @@ header .desktop > article {
 .hero-tablet,
 .display-hero-tab,
 .hero-header-tablet,
+.half-box2-tablet,
 .center-center2-tablet,
+/* #hero-img-tablet,
+#hero-card-tablet,
+#hero-emoji-tablet, */
 .hero-img-tablet,
 .hero-card-tablet,
-.hero-emoji-tablet {
+.hero-emoji-tablet,
+.par-head-tablet
+{
  display: none;
 }
 
@@ -624,33 +630,42 @@ section .bg-dark {
     
     .div1 { 
         grid-area: 1 / 1 / 2 / 3;
-        margin-top: 10rem;
-        padding: 0 15%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12rem;
+        padding: 0 12%;
         text-align: center;
 
-        border: 1px solid orange; 
+        /* border: 1px solid orange;  */
     }
     .div2 { 
         grid-area: 2 / 2 / 4 / 3;
         width: 100%;
 
-        border: 1px solid orange; 
+        /* border: 1px solid orange;  */
     }
     .div3 { 
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 4 / 2;
         width: 100%;
         display: flex;
-        justify-content: right;
-        padding-right: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 1.2rem;
         align-items: center;
 
-        border: 1px solid orange; 
+        /* border: 1px solid orange;  */
     }
     .div4 { 
         grid-area: 3 / 1 / 4 / 2;
         width: 100%;
+        display: flex;
+        justify-content: right;
+        padding-right: 1.2rem;
+        align-items: center;
         
-        border: 1px solid orange;
+        /* border: 1px solid orange;  */
     }
 
 header.desktop {
@@ -664,27 +679,27 @@ header.desktop {
     margin-top: 10%; */
 }
 
-header .tablet > article {
+/* header .tablet > article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.half-box1-tablet {
-    width: 50%;
+article .half-box1-tablet {
+    width: 70%;
     height: 100%;
     padding: 5% 5%;
 }
 
 .half-box2-tablet {
-    width: 50%;
+    width: 650px;
     height: 100%;
 }
 
 .center-center1-tablet {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -704,14 +719,26 @@ header .tablet > article {
     align-items: flex-end;
 }
 
+#contact-us-tablet {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #ow-tablet {
     width: 400px;
     height: 3rem;
     color: var(--white);
     font-size: 1.2rem;
-    margin-left: 13rem;
 
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -740,23 +767,38 @@ a #our-work-tablet{
     margin: 5% 0;
 }
 
-#header-cta-tablet {
-    width: 30%;
+.par-head-tablet p{
+    font-size: 2rem;
+    margin-left: 40%;
+}
+
+.test{
+    /* width: 600px;
     height: auto;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 5% 0;
+    justify-content: center;
+    align-items: center; */
 }
 
-div > a.contact-us{
+.header-cta-tablet {
+    width: 600px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0% 0;
+}
+
+div > a#contact-us-tablet{
     text-decoration: none;
 }
 
-a .contact-us:visited {
+a #contact-us-tablet:visited {
     color: var(--white);
 }
 
@@ -777,7 +819,7 @@ a .contact-us:visited {
 #hero-emoji-tablet {
     position: absolute;
     left: 53%;
-    top: 65%;
+    top: 60%;
     width: 55%;
     z-index: 10;
 }
