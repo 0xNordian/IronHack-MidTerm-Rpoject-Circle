@@ -513,3 +513,64 @@ section .bg-dark {
 .emoji-feedback img{
     width: 128px;
 }
+
+/* Services */
+.services {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    padding: 0 2.5rem;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card__item-ser{
+    background-color: var(--white);
+    padding-bottom: 1em;
+    flex-basis: 280px;
+    max-width: 340px;
+    flex-grow: 1;
+
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow: 11px 11px 22px #e8e8e8,
+        -11px -11px 22px #ffffff;
+}
+
+.card__content-ser{
+    width: 100%;
+    margin: auto;
+}
+
+.card__picture-ser{
+    width: 10%;
+    /* background-size: cover;
+    overflow: hidden; */
+
+}
+
+.card__img-ser {
+    width: 64px;
+    object-fit: fill;
+    transition: all 0.3s linear;
+}
+
+.card__img-ser:hover{
+    transform: scale(1.12);
+}
+
+.card__title-ser{
+    margin-bottom: 1rem;
+}
+
+.card__text-ser {
+    padding: 1rem 1rem;
+}
+
+.card__footer-ser{
+    margin-top: 3rem;
+} 
