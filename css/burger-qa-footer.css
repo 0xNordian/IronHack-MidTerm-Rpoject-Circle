@@ -1,13 +1,3 @@
-body {
-    /* display: inline-flex;
-    width: 100vw;
-    height: 6000px;
-    flex-direction: column;
-    align-items: center;
-    border: 1px dotted dodgerblue;
-    background: var(--lighterGrey); */
-}
-
 button {
     border: 0;
     padding: 0;
@@ -19,6 +9,7 @@ button {
 
 .navbar {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     display: flex;
@@ -110,17 +101,170 @@ body.open .navbar-menu {
     color: var(--white);
 }
 
+/* Estilos para seccion questions */
+.bg-yellow {
+    background-color: var(--yellow);
+}
 
+.margin-x-2 {
+    margin: 2% 0;
+}
 
+.border-none {
+    border: none;
+    width: auto;
+    text-align: center;
+}
+
+.img-size {
+    width: 2rem;
+    height: 2rem;
+    padding: 0 2%;
+}
+
+.mail-input {
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    background-color: var(--white);
+    margin: 1% 0;
+    display: flex;
+    border: none;
+}
+
+.flex-row {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-questions-size {
+    width: 90%;
+    height: 400px;
+    margin-top: 7%;
+    /* quitar margen  */
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+h2 {
+    font-size: 2.94rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+h3 {
+    font-size: 2.35rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+h4 {
+    font-size: 1.41rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.bod-med {
+    font-size: 1.41rem;
+    font-weight: 700;
+}
+
+.bod-reg {
+    font-size: 1.17rem;
+    font-weight: normal;
+}
+
+.head-reg {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.head-med {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.capt-reg1 {
+    font-size: 0.88rem;
+    font-weight: normal;
+}
+
+.capt-reg2 {
+    font-size: 0.76rem;
+    font-weight: normal;
+}
 
 /* ESTILOS FOOTER */
+.border {
+    border: 1px solid red;
+}
+
+.margin-x-30-img {
+    margin-top: 30%;
+}
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.span-width {
+    width: 30%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .footer {
     display: flex;
-    width: 80%;
-    height: 300px;
-    border: 1px solid red;
-    margin: 2% 0;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+.box-address {
+    font-size: 1rem;
+    color: var(--darkGrey);
+}
+
+.div-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (min-width: 1024px) {
@@ -144,11 +288,11 @@ body.open .navbar-menu {
 
     .navbar {
         position: fixed;
-        left: 10%;
+        left: 5%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 94%;
         height: 64px;
         background: var(--lighterGrey);
         color: var(--darkGrey);
@@ -192,7 +336,6 @@ body.open .navbar-menu {
         margin: 0 0;
     }
 
-
     .flex-row {
         display: inline-flex;
         width: 100%;
@@ -202,4 +345,20 @@ body.open .navbar-menu {
         column-gap: 1%;
     }
 
+    /* estilos footer  */
+
+    .center-center {
+        align-items: flex-start;
+        /*  */
+    }
+
+    .footer {
+        flex-direction: row-reverse;
+        /*  */
+    }
+
+    .div-footer {
+        width: 77%;
+        /*  */
+    }
 }
