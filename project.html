@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,95 +9,99 @@
     <link rel="stylesheet" href="./css/project.css" />
     <script src="./js/burger.js" defer></script>
     <title>Project Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <div class="navbar-overlay display-none" onclick="toggleMenuOpen()"></div>
+      <div class="navbar-overlay display-none" onclick="toggleMenuOpen()"></div>
 
-        <button type="button" class="navbar-burger display-none" onclick="toggleMenuOpen()">
-            <span class="material-icons">☰</span>
-        </button>
-        <span><img src="./images/logos/circle.svg" alt="circle logo" /></span>
-        <nav class="navbar-menu">
-            <ul class="non-underline list-direction margin-ul">
-                <li><a href="index.html" class="non-underline">Home</a></li>
-                <li><a href="#recent-projects" class="non-underline">Projects</a></li>
-                <li><a href="#our-services" class="non-underline">Services</a></li>
-            </ul>
-            <span class="contact-us"><a href="#" class="text-white non-underline">Contact Us</a></span>
-        </nav>
+      <button
+        type="button"
+        class="navbar-burger display-none"
+        onclick="toggleMenuOpen()"
+      >
+        <span class="material-icons">☰</span>
+      </button>
+      <span><img src="./images/logos/circle.svg" alt="circle logo" /></span>
+      <nav class="navbar-menu">
+        <ul class="non-underline list-direction margin-ul">
+          <li><a href="index.html" class="non-underline">Home</a></li>
+          <li><a href="#recent-projects" class="non-underline">Projects</a></li>
+          <li><a href="#our-services" class="non-underline">Services</a></li>
+        </ul>
+        <span class="contact-us"
+          ><a href="#" class="text-white non-underline">Contact Us</a></span
+        >
+      </nav>
     </nav>
+
     <header
-        class="center-center border-test header-style flex-column margin-top-nav-15 margin-top-8 margin-top-nav-5 row">
-        <article class="center-center border-test width-50 flex-column">
-            <h1 class="h1">Simplify</h1>
-            <p class="text-center bod-med">UI Design & App Development</p>
+      id="picked-project"
+      class="center-center border-test header-style flex-column margin-top-nav-15 margin-top-8 margin-top-nav-5 row"
+    >
+      <!-- <article class="center-center border-test width-50 flex-column">
+          <h1 class="h1">Simplify</h1>
+          <p class="text-center bod-med">UI Design & App Development</p>
         </article>
         <div class="border-test width-50 align-end height-100 height-97px">
-            <p class="bod-reg neutral-dark">
-                Completed on <span class="bod-reg dark-grey"> June 22,2021</span>
-            </p>
-        </div>
+          <p class="bod-reg neutral-dark">
+            Completed on <span class="bod-reg dark-grey"> June 22,2021</span>
+          </p>
+        </div> -->
     </header>
-    <section class="border-test project-image-style margin-x-2 box-shadow">
-        IMAGEN PROJECTO CARGA DESDE JS
-    </section>
-    <div id="content-project" class="border-test body-reg project-content-style dark-grey">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro
-        placeat, fuga dignissimos quisquam ad cum architecto officiis eaque,
-        tempora aperiam quibusdam fugit ex, et quae. Consectetur totam magni
-        culpa! Iste blanditiis hic inventore in nemo animi maxime, esse adipisci
-        sapiente fugiat, delectus illo voluptate dolorem quasi architecto dolores,
-        quas repudiandae. Sit fugiat excepturi, quo sint et repellendus nostrum?
-        Reiciendis. Suscipit, numquam nostrum saepe quia corrupti recusandae
-        repellendus unde illo aliquid sequi sapiente assumenda molestiae
-        consequatur architecto eum dicta ipsam? Maiores consectetur, dolorem
-        sapiente velit neque dolore? Sint, sapiente cum? Doloribus tenetur non
-        beatae dignissimos exercitationem impedit est eaque. Minus aperiam dolore
-        dolor voluptas quod? Blanditiis hic voluptas cupiditate, ullam dolor natus
-        pariatur nobis, tenetur temporibus et corporis magnam obcaecati?
-    </div>
+    <section
+      id="img-project"
+      class="border-test project-image-style margin-x-2 box-shadow"
+    ></section>
+    <div
+      id="content-project"
+      class="border-test body-reg project-content-style dark-grey"
+    ></div>
 
     <section id="projects">
-        <h3 class="bod-med">Other Projects</h3>
+      <h3 class="bod-med">Other Projects</h3>
     </section>
-    <div id="other-projects" class="projects"></div>
+    <div id="other-projects" class="projects">
+        
+    </div>
 
     <footer class="footer flex-column row-reverse margin-top-nav-5">
-        <div class="div-footer flex-column">
-            <div class="div-footer">
-                <span class="span-width text-center">
-                    <a href="#" class="non-underline">Team</a>
-                </span>
-                <span class="span-width text-center">
-                    <a href="#" class="non-underline">Services</a>
-                </span>
-                <span class="span-width text-center">
-                    <a href="#" class="non-underline">About Us</a>
-                </span>
-            </div>
-            <div class="div-footer margin-x-2">
-                <span class="span-width text-center">
-                    <a href="#" class="non-underline">Press</a>
-                </span>
-                <span class="span-width text-center">
-                    <a href="#" class="non-underline">Projects</a>
-                </span>
-                <span class="span-width text-center">
-                    <a href="#" class="non-underline">Privacy Policy</a>
-                </span>
-            </div>
+      <div class="div-footer flex-column">
+        <div class="div-footer">
+          <span class="span-width text-center">
+            <a href="#" class="non-underline">Team</a>
+          </span>
+          <span class="span-width text-center">
+            <a href="#" class="non-underline">Services</a>
+          </span>
+          <span class="span-width text-center">
+            <a href="#" class="non-underline">About Us</a>
+          </span>
         </div>
-        <div class="center-center flex-column">
-            <span><img class="margin-x-30-img" src="./images/logos/circle.svg" alt="circle logo" /></span>
-            <p class="box-address text-center">2972 Westheimer Rd. Santa Ana,</p>
-            <p class="box-address text-center">Illinois 85486.</p>
+        <div class="div-footer margin-x-2">
+          <span class="span-width text-center">
+            <a href="#" class="non-underline">Press</a>
+          </span>
+          <span class="span-width text-center">
+            <a href="#" class="non-underline">Projects</a>
+          </span>
+          <span class="span-width text-center">
+            <a href="#" class="non-underline">Privacy Policy</a>
+          </span>
         </div>
+      </div>
+      <div class="center-center flex-column">
+        <span
+          ><img
+            class="margin-x-30-img"
+            src="./images/logos/circle.svg"
+            alt="circle logo"
+        /></span>
+        <p class="box-address text-center">2972 Westheimer Rd. Santa Ana,</p>
+        <p class="box-address text-center">Illinois 85486.</p>
+      </div>
     </footer>
     <script src="./js/app.js"></script>
     <script src="./js/projects.js"></script>
-
-</body>
-
+  </body>
 </html>
