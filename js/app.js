@@ -1,7 +1,7 @@
 const API_URL =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2";
 
-async function fetchProjects(uuid) {
+async function fetchProjects() {
   const response = await fetch(API_URL);
   if (!response.ok) {
     alert("Sorry! no response from API");
@@ -42,12 +42,11 @@ async function fetchProjects(uuid) {
 `;
   });
 
-  return topProjects;
+  return sortedProjects;
 }
 
 window.addEventListener("load", async function () {
-  const projects = await fetchProjects();
   const params = new URLSearchParams(window.location.search);
-
   const idProjects = params.get("uuid");
+  const projects = await fetchProjects(idProjects);
 });
