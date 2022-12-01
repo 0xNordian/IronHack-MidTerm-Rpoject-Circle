@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <script src="./js/burger.js" defer></script>
   <!-- <script src="./js/app.js" defer></script> -->
-  <title>Circle 3</title>
+  <title>Circle</title>
 </head>
 
 <body>
@@ -165,7 +165,7 @@
   </aside>
 
   <!-- PROJECTS -->
-  <section class="recent-projects">
+  <section id="recent-projects" class="recent-projects">
     <h3 class="bod-med">Recent Projects</h3>
   </section>
 
@@ -249,7 +249,7 @@
   </section>
 
   <!-- OUR SERVICES  -->
-  <section class="recent-projects">
+  <section id="our-services" class="recent-projects">
     <h3 class="bod-med">Our Services</h3>
   </section>
 
@@ -308,13 +308,16 @@
     <h3 class="text-center">Do you have any questions?</h3>
     <p class="bod-reg margin-x-2">Let us help you</p>
     <div class="flex-column flex-row">
-      <span class="mail-input"><img class="img-size" src="./images/newsletter/icon/mail.svg" alt="" /><input
-          class="border-none" type="email" name="email" id="email" placeholder="Enter your email" /></span>
-      <span class="contact-us"><button type="submit" class="contact-us">Subscribe</button></span>
+      <form class="mail-input"><img class="img-size" src="./images/newsletter/icon/mail.svg" alt="" />
+        <input
+          class="border-none text-left" type="email" name="email" id="email" placeholder="Enter your email" required></span>
+      <span class="contact-us">
+        <button type="submit" class="contact-us">Subscribe</button>
+      </form>
     </div>
   </section>
 
-  <footer class="footer flex-column margin-top-2">
+  <footer class="footer flex-column margin-top-2 margin-top-4">
     <div class="div-footer flex-column">
       <div class="div-footer">
         <span class="span-width text-center">
