@@ -781,7 +781,7 @@ a #contact-us-tablet:visited {
 #hero-img-tablet {
     position: relative;
     width: 100%;
-    z-index: 5;
+    z-index: 0;
 }
 
 #hero-card-tablet {
@@ -789,7 +789,7 @@ a #contact-us-tablet:visited {
     right: 52%;
     bottom: 45%;
     width: 50%;
-    z-index: 10;
+    z-index: 0;
 }
 
 #hero-emoji-tablet {
@@ -797,7 +797,7 @@ a #contact-us-tablet:visited {
     left: 60%;
     top: 75%;
     width: 45%;
-    z-index: 10;
+    z-index: 0;
 }
 
 #companies {
@@ -986,7 +986,7 @@ a #contact-us-tablet:visited {
     #hero-img-mob {
         position: relative;
         width: 50%;
-        z-index: 5;
+        z-index: 0;
     }
     
     #hero-card-mob {
@@ -994,7 +994,7 @@ a #contact-us-tablet:visited {
         right: 50%;
         bottom: 45%;
         width: 25%;
-        z-index: 10;
+        z-index: 0;
     }
     
     #hero-emoji-mob {
@@ -1002,7 +1002,7 @@ a #contact-us-tablet:visited {
         left: 53%;
         top: 60%;
         width: 25%;
-        z-index: 10;
+        z-index: 0;
     }
     
 }

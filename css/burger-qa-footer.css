@@ -21,6 +21,14 @@ button {
     color: var(--darkGrey);
 }
 
+.margin-top-4{
+    margin-top: 4%;
+}
+
+.text-left{
+    text-align: left;
+}
+
 .navbar-overlay {
     position: fixed;
     z-index: 2;
@@ -72,6 +80,10 @@ body.open .navbar-overlay {
     transition: translate 0.3s;
 }
 
+ul li a.non-underline:hover{
+    color: var(--darkBlue)
+}
+
 body.open .navbar-menu {
     translate: 0 0;
     visibility: visible;
@@ -113,7 +125,6 @@ body.open .navbar-menu {
 .border-none {
     border: none;
     width: auto;
-    text-align: center;
 }
 
 .img-size {
@@ -131,6 +142,7 @@ body.open .navbar-menu {
     margin: 1% 0;
     display: flex;
     border: none;
+    padding-right: 1%;
 }
 
 .flex-row {
