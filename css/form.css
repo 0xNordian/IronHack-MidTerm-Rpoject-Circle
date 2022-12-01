@@ -1,97 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap");
-
-:root {
-  --darkBlue: #072ac8;
-  --celeste: #43d2ff;
-  --lightBlue: #a2d6f9;
-  --lighterBlue: #d1edff;
-
-  --dark: #292e47;
-  --darkGrey: #6b708d;
-  --lighGrey: #ecf7ff;
-  --lighterGrey: #f2f4fc;
-
-  --yellow: #ffc600;
-  --white: #ffffff;
-  --black: #000000;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-}
-
-body {
-  width: 100vw;
-  /* background-color: red; */
-  height: 6000px;
-  color: var(--darkGrey);
-  background-color: var(--lighterGrey);
-  /* border: 1px solid red; */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: var(--dark);
-}
-
-h2 {
-  font-size: 2.94rem;
-  font-weight: bold;
-  color: var(--dark);
-}
-
-h3 {
-  font-size: 2.35rem;
-  font-weight: bold;
-  color: var(--dark);
-}
-
-h4 {
-  font-size: 1.41rem;
-  font-weight: bold;
-  color: var(--dark);
-}
-
-.bod-med {
-  font-size: 1.41rem;
-  font-weight: 700;
-}
-
-.bod-reg {
-  font-size: 1.17rem;
-  font-weight: normal;
-}
-
-.head-reg {
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-.head-med {
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.capt-reg1 {
-  font-size: 0.88rem;
-  font-weight: normal;
-}
-
-.capt-reg2 {
-  font-size: 0.76rem;
-  font-weight: normal;
-}
-
 .comment-box {
   padding-bottom: 5%;
   padding-left: 5%;
@@ -133,12 +39,12 @@ h4 {
   padding-bottom: 5%;
   padding-left: 5%;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .display-big {
     display: none;
-  }
-}
-@media (min-width: 1024px) {
+  } */
+/* } */
+/* @media (min-width: 1024px) {
   .display-phone {
     display: none;
   }
@@ -213,8 +119,8 @@ h4 {
     width: 100%;
     height: 100%;
   }
-}
-@media ((min-width: 769px )and (max-width:1023px)) {
+} */
+/* @media (min-width: 769px )and (max-width:1023px) {
   .display-phone {
     display: none;
   }
@@ -290,3 +196,4 @@ h4 {
     height: 100%;
   }
 }
+ */
