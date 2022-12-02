@@ -52,12 +52,14 @@ async function clickedProjects(uuidActual) {
   const $projectContent = document.getElementById("content-project");
 
   $projectContent.innerHTML = `
+  
 <div
        
-        class="border-test body-reg project-content-style dark-grey margin-top-10"
+        class="border-test body-reg project-content-style dark-grey margin-top-10 center-center"
       >
       ${selectedProject[0].content}
       </div>
+      <h3 class="bod-med margin-top-nav-5">Other Projects</h3>
 `;
 }
 // IMPRIME CAJAS OUR PROJECTS
@@ -66,7 +68,8 @@ function printProjectsHTML(slicedShufled) {
   console.log("sliced:", slicedShufled);
 
   slicedShufled.forEach((project) => {
-    $projectsHTML.innerHTML += ` <article class="card__item">
+    $projectsHTML.innerHTML += ` 
+    <article class="card__item">
       <div class="card__content">
         <figure id="project-picture1" class="card__picture">
           <img src="${project.image}" alt="Project Image" class="card__img" />
