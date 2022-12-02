@@ -49,6 +49,9 @@
 .dark-grey {
   color: var(--darkGrey);
 }
+.margin-top-10 {
+  margin-top: 108%;
+}
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .project-image-style {
@@ -57,6 +60,9 @@
 
   .margin-top-8 {
     margin-top: 8%;
+  }
+  .margin-top-10 {
+    margin-top: 43%;
   }
 }
 
@@ -101,7 +107,7 @@
     height: 97px;
   }
 
-  .margin-top-10{
+  .margin-top-10 {
     margin-top: 10%;
   }
 }
