@@ -1,0 +1,376 @@
+button {
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    background: var(--lighterGrey);
+    color: var(--darkGrey);
+}
+
+.margin-top-4{
+    margin-top: 4%;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+    opacity: 1;
+}
+
+.margin-ul {
+    margin: 10% 15%;
+}
+
+.navbar-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.navbar-menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 270px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--white);
+    visibility: hidden;
+    transition: translate 0.3s;
+}
+
+ul li a.non-underline:hover{
+    color: var(--darkBlue)
+}
+
+body.open .navbar-menu {
+    translate: 0 0;
+    visibility: visible;
+}
+
+.non-underline {
+    text-decoration: none;
+    cursor: pointer;
+    list-style-type: none;
+    color: var(--darkGrey);
+}
+
+.contact-us {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /*  margin-left: 10%; */
+}
+
+.contact-us a {
+    color: var(--white);
+}
+
+/* Estilos para seccion questions */
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.margin-x-2 {
+    margin: 2% 0;
+}
+
+.border-none {
+    border: none;
+    width: auto;
+}
+
+.img-size {
+    width: 2rem;
+    height: 2rem;
+    padding: 0 2%;
+}
+
+.mail-input {
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    background-color: var(--white);
+    margin: 1% 0;
+    display: flex;
+    border: none;
+
+}
+
+.flex-row {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-questions-size {
+    width: 90%;
+    height: 400px;
+    margin-top: 7%;
+    /* quitar margen  */
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+h2 {
+    font-size: 2.94rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+h3 {
+    font-size: 2.35rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+h4 {
+    font-size: 1.41rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.bod-med {
+    font-size: 1.41rem;
+    font-weight: 700;
+}
+
+.bod-reg {
+    font-size: 1.17rem;
+    font-weight: normal;
+}
+
+.head-reg {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.head-med {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.capt-reg1 {
+    font-size: 0.88rem;
+    font-weight: normal;
+}
+
+.capt-reg2 {
+    font-size: 0.76rem;
+    font-weight: normal;
+}
+
+/* ESTILOS FOOTER */
+.border {
+    border: 1px solid red;
+}
+
+.margin-x-30-img {
+    margin-top: 30%;
+}
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.span-width {
+    width: 30%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+.box-address {
+    font-size: 1rem;
+    color: var(--darkGrey);
+}
+
+.div-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+
+    /* DESKTOP */
+    .display-none {
+        display: none;
+    }
+
+    .list-direction {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        width: 20%;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+        column-gap: 10%;
+    }
+
+    .navbar {
+        position: fixed;
+        left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 94%;
+        height: 64px;
+        background: var(--lighterGrey);
+        color: var(--darkGrey);
+        flex-direction: row;
+        z-index: 1;
+    }
+
+    .navbar-menu {
+        position: initial;
+        top: 0;
+        left: 0;
+        translate: 0 0;
+        width: 62%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        gap: 58%;
+        flex-direction: row;
+        align-items: flex-start;
+        background: none;
+        visibility: visible;
+        transition: none;
+        z-index: 1;
+    }
+
+    .contact-us {
+        width: 8rem;
+        height: 2.5rem;
+        background-color: var(--darkBlue);
+        color: var(--white);
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
+        margin: -2% 0;
+        z-index: 0;
+    }
+
+    .margin-ul {
+        margin: 0 0;
+    }
+
+    .flex-row {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1%;
+    }
+
+    /* estilos footer  */
+
+    .center-center {
+        align-items: flex-start;
+        /*  */
+    }
+
+    .footer {
+        flex-direction: row-reverse;
+        /*  */
+    }
+
+    .div-footer {
+        width: 77%;
+        /*  */
+    }
+}
