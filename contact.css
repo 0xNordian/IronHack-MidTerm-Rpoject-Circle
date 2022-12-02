@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap");
+
+body {
+  color: var(--darkGrey);
+  background-color: var(--white);
+
+}
+
+:root {
+  --darkBlue: #072ac8;
+  --celeste: #43d2ff;
+  --lightBlue: #a2d6f9;
+  --lighterBlue: #d1edff;
+
+  --dark: #292e47;
+  --darkGrey: #6b708d;
+  --lighGrey: #ecf7ff;
+  --lighterGrey: #f2f4fc;
+
+  --yellow: #ffc600;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+h2 {
+  font-size: 2.94rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 2.35rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+h4 {
+  font-size: 1.41rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.container{
+    margin:10%;
+   
+}
+.warning{
+  color: red;
+}
+.tags{
+  padding-bottom: 2%;
+}
+  .comment-box {
+    padding-bottom: 5%;
+    
+  }
+  .comment-box input {
+    background-color: var(--lighGrey);
+    font-size: 1rem;
+    height: 35px;
+    width: 100%;
+    border:none;
+  }
+  .comment-box1{
+    padding-bottom: 5%;
+  }
+  .comment-box1 input {
+    background-color: var(--lighGrey);
+    font-size: 1rem;
+    height: 35px;
+    width: 100%;
+    border:none;
+  }
+  .title-commentbox {
+    padding-bottom: 10%;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+  }
+  .button-submit button {
+    background-color: var(--darkBlue);
+    color: var(--white);
+    border-color: var(--darkBlue);
+    width: 100%;
+    height: 4rem;
+  }
+  .button-submit {
+    padding-top: 5%;
+    justify-content: flex-start;
+  
+  }
+
+  #area {
+    background-color: var(--lighGrey);
+    font-size: 1rem;
+    height: 120px;
+    width: 100%;
+    border:none;
+   
+  }
+
+@media (min-width:1024px) {
+    .boxes{
+       
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .comment-box input {
+        
+        font-size: 1rem;
+        height: 70px;
+        width: 1100px;
+        border:none;
+      }
+      .comment-box1 input {
+        
+        font-size: 1rem;
+        height: 70px;
+        width: 530px;
+         border:none;
+      }
+   .phone{
+    padding-right: 10.5%;
+   }
+ #area{
+  width: 1100px;
+  height: 200px;
+  border:none;
+ }
+ .button-submit button {
+  width: 1100px;
+  height: 80px;
+}
+.button-submit {
+  justify-content: flex-start;
+
+}
+}
