@@ -47,14 +47,14 @@ async function clickedProjects(uuidActual) {
 
   document.getElementById(
     "img-project"
-  ).innerHTML = `<img src="${selectedProject[0].image}" alt="Project Banner" width="100%" height="100%">`;
+  ).innerHTML = `<img src="${selectedProject[0].image}" alt="Project Banner" width="100%" height="520px">`;
 
   const $projectContent = document.getElementById("content-project");
 
   $projectContent.innerHTML = `
 <div
        
-        class="border-test body-reg project-content-style dark-grey"
+        class="border-test body-reg project-content-style dark-grey margin-top-10"
       >
       ${selectedProject[0].content}
       </div>
