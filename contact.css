@@ -58,6 +58,9 @@ h4 {
     margin:10%;
    
 }
+.warning{
+  color: red;
+}
 .tags{
   padding-bottom: 2%;
 }

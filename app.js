@@ -10,17 +10,17 @@ bttn.addEventListener("click",(e)=>{
   e.preventDefault()
   let warnings=""
   let valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-  let p = ""
-  let w= ""
+  let p=""
 if(number.value.length != 9){
     warnings="Not valid"
     warning.innerHTML = warnings;
 }
-
-    if (nombre.value == "ironhack"){
+console.log(nombre.value)
+ if (nombre.value == "ironhack"){
         warn="You cannot be Ironhack, because I am Ironhack."
         w.innerHTML = warn;
     }
+
 if (!valid.test(email.value))
 {
     p = "Not valid"
@@ -29,6 +29,5 @@ if (!valid.test(email.value))
 }
 })
 
-
-
-    
+comsole
+    s
