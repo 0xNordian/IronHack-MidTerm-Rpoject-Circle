@@ -1,0 +1,157 @@
+.contactUs-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bord-rev {
+    border: 1px solid red;
+}
+
+.parent-form {
+    width: 80vw;
+    height: 60vh;
+    margin: 15% 0 5% 0;
+    box-sizing: border-box;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) 3fr 4fr;
+    grid-column-gap: 22px;
+    grid-row-gap: 25px;
+ 
+    /* background-color: lightyellow; */
+}
+
+.div1-form {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div2-form {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div3-form {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div4-form {
+    grid-area: 3 / 1 / 4 / 3;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.div4-form>input>::placeholder{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div5-form {
+    grid-area: 4 / 1 / 5 / 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-us{
+    color: var(--white);
+}
+
+.input-fw{
+    background-color: var(--lighGrey);
+    margin: 1% 1%;
+    border: none;
+    background: rgba(107, 112, 141, 0.1);
+    padding-left: 2%;
+    font-size: small;
+    color: var(--darkGrey);
+}
+
+.input-hw{
+    background-color: var(--lighGrey);
+    height: 2.5rem;
+    margin: 1% 1%;
+    border: none;
+    background: rgba(107, 112, 141, 0.1);
+    padding-left: 2%;
+    font-size: small;
+    color: var(--darkGrey);
+}
+
+.email-hw{
+    width: 80%;
+}
+.fullName-hw{
+    width: 90%;
+    height: 2.5rem;
+}
+
+.phone-hw{
+    width: 80%;
+}
+
+.message-fw{
+    width: 90%;
+    height: 8rem;
+}
+
+.label-fw{
+    width: 90%;
+    color: var(--darkGrey);
+}
+
+.submit-fw{
+    color: var(--white);
+}
+
+.label-hw{
+    color: var(--darkGrey);
+}
+
+/* .fullName{
+    width: 70vw;
+    height: 50px;
+}
+
+.email{
+    width: 50%;
+    height: 50px;
+}
+
+.phone{
+    width: 50%;
+    height: 50px;
+}
+
+.message{
+    width: 70vw;
+    height: 50px;
+}
+
+.submitButton{
+    width: 70vw;
+    height: 50px;
+} */

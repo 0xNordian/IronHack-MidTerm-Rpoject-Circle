@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/burger-qa-footer.css" />
+    <link rel="stylesheet" href="/css/form_new.css" />
+    <title>Contact-us</title>
+</head>
+
+<body>
+
+<!-- NAV BAR -->
+<nav class="navbar">
+  <div class="navbar-overlay display-none" onclick="toggleMenuOpen()"></div>
+
+  <button type="button" class="navbar-burger display-none" onclick="toggleMenuOpen()">
+    <span class="material-icons">☰</span>
+  </button>
+  <span><a href="https://circl3.netlify.app/"><img src="./images/logos/circle.svg" alt="circle logo" /></a></span>
+  <nav class="navbar-menu">
+    <ul class="non-underline list-direction margin-ul">
+      <li><a href="#" class="non-underline">Home</a></li>
+      <li><a href="https://circl3.netlify.app/index.html#recent-projects" class="non-underline">Projects</a></li>
+      <li><a href="https://circl3.netlify.app/index.html#our-services" class="non-underline">Services</a></li>
+    </ul>
+    <span class="contact-us"><a href="form_new.html" class="text-white non-underline">Contact Us</a></span>
+  </nav>
+</nav>
+
+    <!-- FORM -->
+    <form class="parent-form">
+        <div class="div1-form"> 
+            <label class="label-fw fullName-hw" for="fullName">Full Name *</label>
+            <input class="input-fw fullName-hw" type="text" placeholder="Enter your full name" id="fullName" name="fullName" autocomplete="name" required>
+        </div>
+        <div class="div2-form"> 
+            <label class="label-hw email-hw" for="emailInput">Email</label>
+            <input class="input-hw email-hw" type="email" placeholder="Enter your email address" id="emailInput" name="emailInput" autocomplete="email">
+        </div>
+        <div class="div3-form"> 
+            <label class="label-hw phone-hw" for="phoneInput">Phone</label>
+            <input class="input-hw phone-hw" type="phone" placeholder="Enter your phone number" id="phoneInput" name="phoneInput" autocomplete="phone">
+        </div>
+        <div class="div4-form"> 
+            <label class="label-fw" for="msgInput">Message</label>
+            <input class="input-fw message-fw" type="text" placeholder="Write your message here ..." id="msgInput" name="msgInput" autocomplete="message">
+        </div>
+        <div class="div5-form"> 
+            <button class="contact-us submit-fw fullName-hw">Submit</button>
+        </div>
+    </form>
+
+    <!-- FOOTER -->
+    <footer class="footer flex-column margin-top-2 margin-top-4">
+        <div class="div-footer flex-column">
+          <div class="div-footer">
+            <span class="span-width text-center">
+              <a href="#" class="non-underline">Team</a>
+            </span>
+            <span class="span-width text-center">
+              <a href="#" class="non-underline">Services</a>
+            </span>
+            <span class="span-width text-center">
+              <a href="#" class="non-underline">About Us</a>
+            </span>
+          </div>
+          <div class="div-footer margin-x-2">
+            <span class="span-width text-center">
+              <a href="#" class="non-underline">Press</a>
+            </span>
+            <span class="span-width text-center">
+              <a href="#" class="non-underline">Projects</a>
+            </span>
+            <span class="span-width text-center">
+              <a href="#" class="non-underline">Privacy Policy</a>
+            </span>
+          </div>
+        </div>
+        <div class="center-center flex-column">
+          <span><img class="margin-x-30-img" src="./images/logos/circle.svg" alt="circle logo" /></span>
+          <p class="box-address text-center">2972 Westheimer Rd. Santa Ana,</p>
+          <p class="box-address text-center">Illinois 85486.</p>
+        </div>
+      </footer>
+</body>
+
+</html>
