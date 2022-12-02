@@ -20,6 +20,10 @@ async function fetchProjects() {
   });
 
   const topProjects = sortedProjects.slice(0, 3);
+  return topProjects;
+}
+
+function printIndex(topProjects) {
   const $projects = document.getElementById("projects");
   const $cardTitle = document.getElementsByClassName("card__title");
   const $otherProjects = document.getElementById("other-projects");
@@ -41,12 +45,11 @@ async function fetchProjects() {
     </article>
 `;
   });
-
-  return sortedProjects;
 }
 
 window.addEventListener("load", async function () {
-  const params = new URLSearchParams(window.location.search);
-  const idProjects = params.get("uuid");
-  const projects = await fetchProjects(idProjects);
+  /* const params = new URLSearchParams(window.location.search);
+  const idProjects = params.get("uuid"); */
+  const projects = await fetchProjects();
+  printIndex(projects);
 });

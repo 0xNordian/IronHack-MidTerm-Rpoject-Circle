@@ -1,24 +1,39 @@
-async function printProjects(idProjects, sortedProjects) {
-  const randomProject = sortedProjects.filter(
-    (item) => item.uuid !== idProjects
-  );
+const API_URL_PROJECTS =
+  "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2";
 
-  let shuffledProjects = randomProject.sort(function () {
+async function fetchProjectsHTML(uuidActual) {
+  const response = await fetch(API_URL_PROJECTS);
+  if (!response.ok) {
+    alert("Sorry! no response from API");
+  }
+  const dataPROJECTS = await response.json();
+
+  const shufledProjects = dataPROJECTS.sort(function () {
     return Math.random() - 0.5;
   });
-  console.log("Shuffled", shuffledProjects);
 
-  const filteredShuffledProjects = shuffledProjects.slice(0, 3);
-  console.log("Sliced:", filteredShuffledProjects);
+  const filteredShufledProjects = shufledProjects.filter(
+    (item) => item.uuid !== uuidActual
+  );
+  const slicedShufled = filteredShufledProjects.slice(0, 3);
+  return slicedShufled;
 }
 
-async function clickedProjects(idProjects, sortedProjects) {
-  const selectedProject = sortedProjects.filter(
-    (item) => item.uuid === idProjects
+async function printProjects(idProjects2, sortedProjects) {
+  const randomProject = sortedProjects.filter(
+    (item) => item.uuid !== idProjects2
   );
-  console.log(selectedProject);
-  const $bodyProject = document.getElementById("picked-project");
+}
 
+// PINTA EL PROYECTO SELECIONADO
+async function clickedProjects(uuidActual) {
+  const randomSliced = await fetchProjects();
+  const selectedProject = randomSliced.filter(
+    (item) => item.uuid === uuidActual
+  );
+  console.log("selected:", selectedProject);
+  console.log("id actual: ", uuidActual);
+  const $bodyProject = document.getElementById("picked-project");
   $bodyProject.innerHTML = `
 <article class="center-center border-test width-50 flex-column">
   <h1 class="h1"> ${selectedProject[0].name} </h1>
@@ -45,12 +60,41 @@ async function clickedProjects(idProjects, sortedProjects) {
       </div>
 `;
 }
+// IMPRIME CAJAS OUR PROJECTS
+function printProjectsHTML(slicedShufled) {
+  const $projectsHTML = document.getElementById("projects-html");
+  console.log("sliced:", slicedShufled);
+
+  slicedShufled.forEach((project) => {
+    $projectsHTML.innerHTML += ` <article class="card__item">
+      <div class="card__content">
+        <figure id="project-picture1" class="card__picture">
+          <img src="${project.image}" alt="Project Image" class="card__img" />
+        </figure>
+
+        <div class="card__text">
+          <h3 class="card__title bod-med">${project.name}</h3>
+          <p class="card__paragraph">${project.description}</p>
+          <div class="card__footer"><a href="project.html?uuid=${project.uuid}">Learn More</a></div>
+        </div>
+      </div>
+    </article>
+`;
+  });
+}
 window.addEventListener("load", async function () {
+  const params2 = new URLSearchParams(window.location.search);
+  const idProjects2 = params2.get("uuid");
+  const randomSliced = await fetchProjectsHTML(idProjects2);
+  printProjectsHTML(randomSliced);
+  await printProjects(idProjects2, randomSliced);
+  await clickedProjects(idProjects2);
+});
+
+/* window.addEventListener("load", async function () {
   const params = new URLSearchParams(window.location.search);
   const idProjects = params.get("uuid");
-  const sortedProjects = await fetchProjects();
-  await printProjects(idProjects, sortedProjects);
-  await clickedProjects(idProjects, sortedProjects);
-  //console.log(idProjects);
-  //const projects = await fetchProjects(idProjects);
+  const projects = await fetchProjects(idProjects);
+  printIndex(projects);
 });
+ */
